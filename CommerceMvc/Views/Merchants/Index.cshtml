@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Merchant>
+
+<h1>Merchants</h1>
+<a href="/merchants/new">Add a Merchant</a>
+
+@foreach (var merchant in Model)
+{
+    <a href="/merchants/@merchant.Id"><h3>@merchant.Name</h3></a>
+}

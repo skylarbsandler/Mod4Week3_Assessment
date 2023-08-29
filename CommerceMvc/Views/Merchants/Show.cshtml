@@ -1,0 +1,11 @@
+﻿@model Merchant
+
+<h2>@Model.Name</h2>
+<p>@Model.Category</p>
+
+<h3>Products</h3>
+@foreach (var product in Model.Products)
+{
+    <a href="/products/@product.Id"><strong>@product.Name</strong></a>
+    <p>@product.Description</p>
+}
