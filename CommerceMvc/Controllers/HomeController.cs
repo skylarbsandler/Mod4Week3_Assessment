@@ -29,6 +29,11 @@ namespace CommerceMvc.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();
