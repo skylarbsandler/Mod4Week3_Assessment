@@ -18,6 +18,17 @@ namespace CommerceMvc.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(string currentUser)
+        {
+            return RedirectToAction("Index");
+        }
+
         public IActionResult Privacy()
         {
             return View();
