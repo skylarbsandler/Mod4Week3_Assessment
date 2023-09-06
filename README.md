@@ -4,7 +4,7 @@
 * Fork and Clone this repository
 * Run `update-database` - let the instructors know if you run into any issues!
 
-## Exercise (12 Points)
+## Exercise (10 Points)
 ### Securing the Application (4 points)
 * Use Secrets Managemnt to remove the database connection string from the application.
 * So that we can see the full implmentation, include a screenshot below to show your `secrets.json` file
