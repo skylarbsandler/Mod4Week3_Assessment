@@ -4,5 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <a href="/home/login"><button>Log In</button></a> <a href="/home/logout"><button>Log Out</button></a>
+    @if (ViewData.ContainsKey("CurrentUser"))
+    {
+        <p>Hello, @ViewData["CurrentUser"]!</p>
+        <a href="/home/logout"><button>Log Out</button></a>
+    }
+    else 
+    {
+        <a href="/home/login"><button>Log In</button></a>
+    }
 </div>

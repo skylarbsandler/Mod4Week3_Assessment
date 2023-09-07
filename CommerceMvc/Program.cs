@@ -8,10 +8,12 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<CommerceMvcContext>(options =>
     options
-        .UseNpgsql(builder.Configuration.GetConnectionString("CommerceMvcDb"))
-        .UseSnakeCaseNamingConvention()
-
-    );
+        .UseNpgsql(builder.Configuration["COMMERCEMVC_DBCONNECTIONSTRING"]
+          ?? throw new InvalidOperationException(
+                        "Connection string 'CommerceMVCDb' not found."
+                    )
+            )
+        .UseSnakeCaseNamingConvention());
 
 var app = builder.Build();
 
