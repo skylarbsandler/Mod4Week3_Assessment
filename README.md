@@ -9,7 +9,7 @@
 * Use Secrets Managemnt to remove the database connection string from the application.
 * So that we can see the full implmentation, include a screenshot below to show your `secrets.json` file
 
-< Screen shot here >
+![Screenshot 2023-09-07 091035](https://github.com/skylarbsandler/Mod4Week3_Assessment/assets/95989203/3bbafb1a-c2b5-4d1c-b596-a9c16160d40d)
 
 ### Maintaining Current-User (6 points)
 
